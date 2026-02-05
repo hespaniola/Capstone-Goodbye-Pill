@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Login • GoodbyePills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="auth-card">
+      <div class="brand-row">
+        <div class="mark">GP</div>
+        <div>
+          <h1>GoodbyePills</h1>
+          <p class="muted">Create an account or sign in.</p>
+        </div>
+      </div>
+
+      <label for="username">Username</label>
+      <input id="username" autocomplete="username" placeholder="e.g., hunter" />
+
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Min 6 characters" />
+
+      <div class="row">
+        <button id="loginBtn" class="btn primary">Log in</button>
+        <button id="registerBtn" class="btn">Create account</button>
+      </div>
+
+      <p id="msg" class="muted small" aria-live="polite"></p>
+
+      <p class="muted tiny">
+        Demo note: accounts are stored locally in <code>data/users.json</code> (prototype only).
+      </p>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
